@@ -171,7 +171,7 @@ CoolLink.prototype.setFan = function(value, callback) {
         this.getCommandTopic(),
         message
     );
-    this.auto_switch.getCharacteristic(Characteristic.On).updateValue(false);
+    // this.auto_switch.getCharacteristic(Characteristic.On).updateValue(false);
     this.isFanOn(callback);
 }
 CoolLink.prototype.getFanRotationSpeed = function(callback) {
@@ -214,7 +214,7 @@ CoolLink.prototype.setAuto = function(value, callback) {
         this.getCommandTopic(),
         message
     );
-    this.fan.getCharacteristic(Characteristic.On).updateValue(false);
+    // this.fan.getCharacteristic(Characteristic.On).updateValue(false);
     this.isAutoOn(callback);
 }
 CoolLink.prototype.isRotationOn = function(callback) {
